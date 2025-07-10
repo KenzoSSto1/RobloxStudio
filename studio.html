@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Studio Android - Fake UI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }body {
+  background-color: #1e1e1e;
+  color: white;
+  overflow: hidden;
+}
+
+.topbar {
+  height: 40px;
+  background-color: #2d2d30;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.topbar img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu span {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 40px);
+}
+
+.panel {
+  background-color: #252526;
+  border-right: 1px solid #3c3c3c;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.explorer {
+  width: 20%;
+}
+
+.viewport {
+  flex: 1;
+  background-color: #1e1e1e;
+  border-right: 1px solid #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+.properties {
+  width: 20%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #2d2d30;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Roblox_Studio_Icon.png" alt="Logo">
+    <div class="menu">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Model</span>
+      <span>Test</span>
+    </div>
+  </div>  <div class="container">
+    <div class="panel explorer">
+      <strong>Explorer</strong>
+      <p>Workspace</p>
+      <p>Lighting</p>
+      <p>Players</p>
+      <p>ReplicatedStorage</p>
+      <p>StarterGui</p>
+      <p>SoundService</p>
+    </div><div class="viewport">
+  <h2>Viewport</h2>
+</div>
+
+<div class="panel properties">
+  <strong>Properties</strong>
+  <p>Name: Workspace</p>
+  <p>Parent: nil</p>
+  <p>ClassName: Model</p>
+  <p>Archivable: true</p>
+</div>
+
+  </div>  <div class="footer">This is a fake UI for fun - Not affiliated with Roblox</div>
+</body>
+</html>
